@@ -1,0 +1,366 @@
+@font-face{
+  font-family: 'helv';
+  src: url('../fonts/Helvetica.ttf');
+  font-display: swap;
+}
+@font-face{
+  font-family: 'light';
+  src: url('../fonts/HelveticaNeue-Light.ttf');
+  font-display: swap;
+}
+@font-face{
+  font-family: 'med';
+  src: url('../fonts/Roboto-Medium.ttf');
+  font-display: swap;
+}
+@font-face{
+  font-family: 'regular';
+  src: url('../fonts/Roboto-Regular.ttf');
+  font-display: swap;
+}
+body {
+  font-size: 1rem;
+  background-color: #fbfbfb;
+  font-family: 'helv';
+}
+a, a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.navi{
+	background-color: transparent !important;
+	border: none;
+	padding: 1em;
+}
+.navi .navbar-toggle .icon-bar{
+	background-color: white;
+}
+.navi .navi-list .nav-item .nav-link{
+	color: #000000;
+	font-size: 1rem;	
+  font-family: 'helv';
+  margin-right: 1em;
+}
+.navi .navbar-brand img{
+	width: 7em;
+	margin-top: -0.7em;
+}
+.navi.scrolled {
+  background-color: #fff !important;
+  transition: 0.3s;
+}
+.navbar-fixed-top.scrolled .nav-link {
+  color:black;
+}
+.navi .navbar-nav.active>a{
+	background-color: transparent;
+	color: #c19d5d;
+ }
+.navi .navi-list .active>.nav-link, .navi .navi-list .nav-link.active,
+.navi .navi-list .nav-link.show, .navi .navi-list .show>.nav-link, 
+.navi .navi-list .nav-item a:hover{
+    background-color: transparent;
+    color: #c19d5d;
+}
+.navi .navbar-toggler{
+  background-color: #c19d5d;
+}
+.navi .nav-item .sign-up-btn{
+  background-color: #c19d5d;
+  border: none;
+  color: white;
+  margin-top: -0.7em;
+  box-shadow: 0px 2px 8px 0px #cccccc;
+}
+.navi .nav-item .sign-up-btn a, .navi .nav-item .sign-up-btn a:hover{
+  color: white;
+  font-size: 0.93em;
+}
+.header-image{
+  width: 100%;
+  height: 105vh;
+  object-fit: cover;
+  position: relative;
+}
+.mob-header-image{
+  display: none;
+}
+.image-info{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+.image-line{
+  color: black;
+  font-size: 0.7em;
+}
+.image-line small, .image-line-2 small, .image-line-3 small i
+{
+  color: #c19d5d;
+  font-size: 1em;
+}
+.image-line-2{
+  color: black;
+  font-size: 1.5em;
+}
+.image-line-3{
+  color: #616161;
+  font-size: 0.7em;
+}
+.about-section{
+  background-color: #fbfbfb;
+  padding: 1em 0em;
+}
+.story-section{
+  padding-top: 3em;
+}
+.section-title{
+  color: #c19d5d;
+  font-size: 1.5em;
+}
+.section-text{
+  color: #616161;
+  font-size: 1.2rem;
+}
+.graph-section{
+  padding: 4em 0em;
+}
+.side-image{
+  width: 100%;
+}
+.side-title{
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.7em;
+}
+.side-subtitle{
+  color: #c19d5d;
+  font-size: 1.2em;
+}
+.side-text{
+  color: #616161;
+  font-size: 0.7em;
+}
+.side-list{
+  list-style: none; 
+  color: #616161;
+  font-size: 0.7em;
+}
+.side-list li::before {
+  content: "\2022"; 
+  color: #c19d5d; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+.gallery-section{
+  background-color: #fbfbfb;
+  padding: 2em 0em;
+}
+.main {
+  max-width: 800px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+.main img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.item-a{
+  grid-row: 1 / 2;
+}
+.item-b{
+  grid-column: 2/4;
+}
+.item-c{
+  grid-column: 2;
+}
+.item-f{
+  grid-row: 2/4;
+}
+.item-d{
+  grid-column: 3;
+}
+.item-e{
+  grid-row: 2;
+  grid-column: 2;
+}
+.item-h{
+  grid-row: 2;
+  grid-column: 3;
+}
+.main2{
+  /*margin: 0 auto;*/
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+.main2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.item-5{
+  grid-row: 1/3;
+}
+.item-6{
+  grid-column: 2/3;
+}
+.item-7{
+  grid-row: 2;
+  grid-column: 2;
+}
+.item-8{
+  grid-row: 1/3;
+  grid-column: 3;
+}
+.testimonial-section{
+  padding: 3em 0em;
+}
+.card{
+  margin: 1em;
+}
+.card-image{
+  width: 4em;
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: 4px solid white;
+}
+.testimonial-card{
+  background-image: url(../images/side-image1.jpg);
+  background-size: cover;
+  padding: 1em 2em 1em 3em;
+  position: relative;
+  box-shadow: 3px 3px 10px 10px #f5f0e6;
+  border-radius: 15px;
+}
+.card-title{
+  color: black;
+  font-size: 1rem; 
+}
+.card-info{
+  color: #616161;
+  font-size: 1rem;
+}
+.email-form{
+  box-shadow: -4px 1px 10px 2px #cccccc;
+}
+.email-form .form-control:focus{
+  border-color: #c19d5d;
+  box-shadow: none;
+}
+.email-form .form-control::placeholder{
+  color: #c4c4c4;
+  font-family: 'light';
+}
+.email-form .form-control{
+  font-family: 'light';
+}
+.mail-box{
+  background-color: #c19d5d;
+}
+.mail-box i{
+  color: white;
+}
+.fahdy-footer{
+  background-color: #575757;
+  padding: 3em 0em;
+  font-family: 'helv';
+  color: white;
+  font-size: 1rem;
+}
+.footer-title{
+  color: white;
+}
+.social-media{
+  width: 1.5rem;
+  margin-right:0.5rem;
+}
+.footer-info{
+  font-size: 0.9rem;
+  color: #c4c4c4;
+  line-height: 1;
+}
+.form-section{
+  padding: 6em 0em;
+}
+.booking-form{
+  color: #c4c4c4;
+  font-family: 'light';
+  font-size: 1rem;
+}
+.booking-form label{
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #575757;
+}
+.booking-form .form-control::placeholder{
+  color: #c4c4c4;
+}
+.booking-form .form-control:focus{
+  box-shadow: none;
+  border-color: #c19d5d;
+}
+.submit-btn{
+  background-color: #c19d5d; 
+  color: white;
+  font-family: 'light';
+  border:none;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+}
+.form-notice{
+  color: #c19d5d;
+}
+.image-section{
+  padding: 7em 0em;
+}
+.notice-msg{
+  font-size: 1.5rem;
+}
+.notice-msg a{
+  color: #c19d5d;
+}
+.page-section{
+  padding: 6em 0em;
+}
+.page-title{
+  color: #8f7648;
+  font-size: 2.5rem;
+}
+.page-text{
+  color: #c19d5d;
+  font-size: 2.5rem;
+}
+@media only screen and (min-device-width : 320px)
+and (max-device-width: 767px) {
+  .header-image{
+    display: none;
+  }
+  .mob-header-image{
+    display: block;
+    height: 100vh;
+    width: 100%;
+  }
+  .image-info{
+    top: 20%;
+  }
+  .navi .nav-item .sign-up-btn{
+    margin-top: 0.5em;
+  }
+  .navi{
+    background-color: white !important;
+  }
+}

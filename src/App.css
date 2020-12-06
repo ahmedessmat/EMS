@@ -1,0 +1,76 @@
+.text-primary {
+  color: #C19D5D !important; }
+
+.text-secondary-light {
+  color: #C4C4C4; }
+
+.bg-secondary {
+  background-color: #575757 !important; }
+
+.bg-primary {
+  background-color: #C19D5D !important; }
+
+.border-primary {
+  border-color: #C19D5D !important; }
+
+.active {
+  color: #C19D5D !important; }
+
+.headerMargin {
+  margin-top: 5rem; }
+  @media (min-width: 576px) {
+    .headerMargin {
+      margin-top: 8rem; } }
+
+.card {
+  border-radius: 15px;
+  box-shadow: 1px solid #C19D5D; }
+  .cardImgWrapper {
+    position: relative;
+    padding-top: 75%; }
+  .card-img-top {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.slick-dots li.slick-active button:before {
+  color: #C19D5D !important; }
+
+.slick-dots {
+  bottom: -40px !important; }
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  color: grey; }
+
+.fb {
+  color: #3b5998; }
+
+.twitter {
+  color: #00acee; }
+
+.youtube {
+  color: #FF0000; }
+
+.slick-track {
+  display: flex !important; }
+
+.slick-slide {
+  height: inherit !important; }
+  .slick-slide div {
+    height: 100%; }
+
+.fa-rotate-90 {
+  vertical-align: middle; }
+
+/*# sourceMappingURL=app.css.map */
