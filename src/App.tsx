@@ -1,33 +1,28 @@
+import withRoot from './modules/withRoot';
+// --- Post bootstrap -----
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import ProTip from './ProTip';
+import ProductCategories from './modules/views/ProductCategories';
+import ProductSmokingHero from './modules/views/ProductSmokingHero';
+import AppFooter from './modules/views/AppFooter';
+import ProductHero from './modules/views/ProductHero';
+import ProductValues from './modules/views/ProductValues';
+import ProductHowItWorks from './modules/views/ProductHowItWorks';
+import ProductCTA from './modules/views/ProductCTA';
+import AppAppBar from './modules/views/AppAppBar';
 
-function Copyright() {
+function Index() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
+    <React.Fragment>
+      <AppAppBar />
+      <ProductHero />
+      <ProductValues />
+      <ProductCategories />
+      <ProductHowItWorks />
+      <ProductCTA />
+      <ProductSmokingHero />
+      <AppFooter />
+    </React.Fragment>
   );
 }
 
-export default function App() {
-  return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Create React App v4-beta example with TypeScript
-        </Typography>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
-  );
-}
+export default withRoot(Index);
